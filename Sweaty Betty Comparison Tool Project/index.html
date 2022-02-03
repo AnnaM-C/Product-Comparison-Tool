@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+
+<title>Title</title>
+
+<meta name="description" content="Grunt template" />
+<meta name="keywords" content="template, grunt" />
+<meta name="robots" content="index, follow" />
+<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1" />
+
+
+<link rel="stylesheet" type="text/css" href="https://www.sweatybetty.com/on/demandware.static/Sites-SB-Site/-/default/css/allinone.css" />
+<link rel="stylesheet" type="text/css" href="https://www.sweatybetty.com/on/demandware.static/-/Library-Sites-sweatybettylibrary/default/css/custom.css" />
+
+<link rel="stylesheet" type="text/css" href="/css-default/template.css" />
+</head>
+
+<body>
+
+    <div id="wrapper" class="pt_content">
+        <div class="off-canvas-wrapper-inner">
+            <div class="off-canvas-content">
+                <div class="top-banner" role="banner" style="position: relative;">
+    <div id="template-header">
+        <a href="/" class="pl-btn pl-btn--small">UK</a>
+        <a href="/us.html" class="pl-btn pl-btn--small">US</a>
+        <a href="/eu.html" class="pl-btn pl-btn--small">EU</a>
+        <a href="/au.html" class="pl-btn pl-btn--small">AU</a>
+    </div>
+</div>
+
+                <div id="main" role="main" class="full-width clearfix">
+                    <div id="primary" class="primary-content">
+                        <div class="content-asset content-main-info" data-item-id="null" data-item-name="null" data-item-type="asset" data-creative="null">
+                            <style>
+#header-container #heading{color:green;display:flex;flex-wrap:nowrap;justify-content:center}#pdp-content{flex-wrap:wrap;display:flex;justify-content:space-around}#pdp-content .column1,#pdp-content .column2{display:flex;flex-wrap:wrap;flex-direction:column;align-content:space-around;max-width:500px;text-align:center}#pdp-content .col #button1,#pdp-content .col #image1{display:none}#pdp-content a,#pdp-content img{display:none;margin:auto;align-items:space-around;text-align:center}#pdp-content img{width:60%}</style>
+
+<div id="header-container">
+    <h1 id="heading">Compare Jackets</h1>
+</div>
+
+<div id="pdp-content">
+
+    <div class="col column1">
+        <select id="mySelect" class="dropDown" onchange="onChangeFunction()">
+            <option>Select a style</option>
+        </select>
+        <img id="image1" class="images" src="/">
+        <div id="area" class="areas"></div>
+        <a id="button1" class="buttons pl-btn pl-btn--primary" href="/">Shop Now</a>
+    </div>    
+    
+    <div class="col column2">
+        <select id="mySelect2" class="dropDown" onchange="onChangeFunction2()">
+            <option>Select a style</option>
+        </select>
+        <img id="image2" class="images" src="/">
+        <div id="area2" class="areas"></div>
+        <a id="button2" class="buttons pl-btn pl-btn--primary" href="/">Shop Now</a>
+    </div>  
+</div>
+
+<script>
+
+var shorts = [
+    {   name: "Accelerate Running Vest",
+        activity: "Running",
+        Fabric: "Water Resistant",
+        downRating: "N/A",
+        Length: "61cm"
+    },
+    {   name: "Fast Track Thermal Running Vest",
+        activity: "Running",
+        Fabric: "Water Resistant",
+        downRating: "N/A",
+        Length: "64.5cm"
+    },
+    {   name: "Fast Track Running Jacket",
+        activity: "Running",
+        Fabric: "Water Resistant",
+        downRating: "N/A",
+        Length: "63cm"
+    },
+    {   name: "Commuter Cycling Jacket",
+        activity: "Cycling",
+        Fabric: "Water Resistant",
+        downRating: "N/A",
+        Length: "60cm"
+    },
+    {   name: "Mission Performance Jacket",
+        activity: "Hiking",
+        Fabric: "Waterproof",
+        downRating: "N/A",
+        Length: "70cm"
+    },
+    {   name: "Pack It Up Mac",
+        activity: "Everyday",
+        Fabric: "Water Resistant",
+        downRating: "N/A",
+        Length: "66cm"
+    },
+    {   name: "Agile Zip Through Jacket",
+        activity: "Everyday",
+        Fabric: "Water Resistant",
+        downRating: "N/A",
+        Length: "57cm"
+    },
+    {   name: "Go Your Way 3 In 1 Mac",
+        activity: "Everyday",
+        Fabric: "Water Resistant",
+        downRating: "N/A",
+        Length: "115cm"
+    },
+    {   name: "Mission Waterproof Parka",
+        activity: "Everyday",
+        Fabric: "Waterproof",
+        downRating: "N/A",
+        Length: "94cm",
+        stretchrathing: "3/5"
+    },
+    {   name: "Stride Waterproof Parka Jacket",
+        activity: "Everyday",
+        Fabric: "Waterproof",
+        downRating: "N/A",
+        Length: "88cm"
+    }
+];
+
+var shortsButtonAndImage = [
+    {   name: "Accelerate Running Vest",
+        url: "https://www.sweatybetty.com/shop/tops/coats-and-jackets/accelerate-running-gilet-SB6056_Black.html",
+        image: "https://cdn.media.amplience.net/i/SweatyBetty/sb6056_black_3"
+    },
+    {   name: "Fast Track Thermal Running Vest",
+        url: "https://www.sweatybetty.com/shop/tops/coats-and-jackets/fast-track-thermal-running-gilet-SB5258_MirageGreen.html",
+        image: "https://cdn.media.amplience.net/i/SweatyBetty/sb5258_miragegreen"
+    },
+    {   name: "Fast Track Running Jacket",
+        url: "https://www.sweatybetty.com/shop/tops/coats-and-jackets/fast-track-running-jacket-SB5631_BlueCelestialDotPrint.html",
+        image: "https://cdn.media.amplience.net/i/SweatyBetty/sb5631_bluecelestialdotprint_6"
+    },
+    {   name: "Commuter Cycling Jacket",
+        url: "https://www.sweatybetty.com/shop/tops/coats-and-jackets/power-gym-zip-through-jacket-SB5644_NavyBlue.html?dwvar_SB5644__NavyBlue_color=navyblue&cgid=jackets&tile=3.0#start=3",
+        image: "https://cdn.media.amplience.net/i/SweatyBetty/sb6576a_navyblue"
+    },
+    {   name: "Mission Performance Jacket",
+        url: "https://www.sweatybetty.com/shop/tops/coats-and-jackets/mission-performance-jacket-SB5875_Black.html?dwvar_SB5875__Black_color=black&cgid=&tile=4.0#q=waterproof&start=4",
+        images: "https://cdn.media.amplience.net/i/SweatyBetty/sb5875_black_5"
+    },
+    {   name: "Pack It Up Mac",
+        url: "https://www.sweatybetty.com/shop/tops/coats-and-jackets/pack-it-up-mac-SB6060A_BlueSBMovePrint.html",
+        image: "https://cdn.media.amplience.net/i/SweatyBetty/sb6060a_bluesbmoveprint"
+    },
+    {   name: "Agile Zip Through Jacket",
+        url: "https://www.sweatybetty.com/shop/tops/coats-and-jackets/agile-zip-through-jacket-SB6789_StoneBeige.html",
+        image: "https://cdn.media.amplience.net/i/SweatyBetty/sb6789_stonebeige_4"
+    },
+    {   name: "Go Your Way 3 In 1 Mac",
+        url: "https://www.sweatybetty.com/shop/tops/coats-and-jackets/go-your-way-3-in-1-mac-SB6351_Black.html",
+        image: "https://cdn.media.amplience.net/i/SweatyBetty/sb6351_black"
+    },
+    {   name: "Mission Waterproof Parka",
+        url: "https://www.sweatybetty.com/shop/tops/coats-and-jackets/mission-waterproof-parka-SB6171_NavyBlue.html",
+        images: "https://cdn.media.amplience.net/i/SweatyBetty/sb6171_navyblue"
+    },
+    {   name: "Stride Waterproof Parka Jacket",
+        url: "https://www.sweatybetty.com/shop/tops/coats-and-jackets/stride-waterproof-parka-SB4932_Black.html",
+        images: "https://cdn.media.amplience.net/i/SweatyBetty/sb4932_black"
+    }
+]
+
+var button = document.getElementById("button1");
+var button2 = document.getElementById("button2");
+var div = document.getElementById("area");
+var selectTag = document.getElementById("mySelect");
+var shortsName;
+var headerName;
+var header;
+var paragraph;
+
+var div2 = document.getElementById("area2");
+var selectTag2 = document.getElementById("mySelect2");
+var shortsName2;
+var headerName2;
+var header2;
+var paragraph2;
+
+
+function createMenu() {
+    for (var i = 0; i < shorts.length; i++) {
+
+    shortsName = shorts[i].name;
+
+    var newShortsName = document.createTextNode(shortsName);
+    var optionTag = document.createElement("option");
+
+    selectTag.appendChild(optionTag);
+    optionTag.appendChild(newShortsName);
+    }
+}
+
+function createMenu2() {
+    for (var i = 0; i < shorts.length; i++) {
+
+    shortsName2 = shorts[i].name;
+
+    var newShortsName2 = document.createTextNode(shortsName2);
+    var optionTag2 = document.createElement("option");
+
+    selectTag2.appendChild(optionTag2);
+    optionTag2.appendChild(newShortsName2);
+    }
+}
+
+function displayContent() {
+
+    div.innerHTML = "";
+    
+    for (let i = 0; i < shorts.length; i++) {
+
+        if (selectTag.value == shorts[i].name) {
+
+            for (let j = 0; j < Object.keys(shorts[0]).length; j++) {
+                var title = Object.keys(shorts[i])[j];
+                var feature = Object.values(shorts[i])[j];
+
+                var titleNode = document.createTextNode(title);
+                var featureNode = document.createTextNode(feature);
+
+                var header = document.createElement("h1");
+                var paragraph = document.createElement("p");
+
+                header.appendChild(titleNode);
+                paragraph.appendChild(featureNode);
+
+                div.appendChild(header);
+                div.appendChild(paragraph);
+            }
+        }
+    }
+}
+
+function displayContent2() {
+    
+    div2.innerHTML = "";
+    
+    for (let i = 0; i < shorts.length; i++) {
+
+        if (selectTag2.value == shorts[i].name) {
+
+            for (let k = 0; k < Object.keys(shorts[0]).length; k++) {
+                var title2 = Object.keys(shorts[i])[k];
+                var feature2 = Object.values(shorts[i])[k];
+
+                var titleNode2 = document.createTextNode(title2);
+                var featureNode2 = document.createTextNode(feature2);
+
+                var header2 = document.createElement("h1");
+                var paragraph2 = document.createElement("p");
+
+                header2.appendChild(titleNode2);
+                paragraph2.appendChild(featureNode2);
+
+                div2.appendChild(header2);
+                div2.appendChild(paragraph2);
+            }
+        }
+    }
+}
+
+function displayButtonAndImage() {
+    document.getElementById("button1").style.display="block";
+    document.getElementById("image1").style.display="block";
+}
+
+function displayButtonandImage2() {
+    document.getElementById("button2").style.display="block";
+    document.getElementById("image2").style.display="block";
+}
+
+function onChangeFunction() {
+    displayContent();
+    displayButtonAndImage();
+}
+
+function onChangeFunction2() {
+    displayContent2();
+    displayButtonandImage2();
+}
+
+window.onload = createMenu();
+window.onload = createMenu2();
+
+selectTag.addEventListener("change", function(){
+    for (let m = 0; m < shortsButtonAndImage.length; m++) {
+        if (selectTag.value == shortsButtonAndImage[m].name) {
+            button.href = Object.values(shortsButtonAndImage[m])[1];
+        }
+    }
+});
+
+selectTag2.addEventListener("change", function(){
+    for (let m = 0; m < shortsButtonAndImage.length; m++) {
+        if (selectTag2.value == shortsButtonAndImage[m].name) {
+            button2.href = Object.values(shortsButtonAndImage[m])[1];
+        }
+    }
+});
+
+selectTag.addEventListener("change", function(){
+    for (let m = 0; m < shortsButtonAndImage.length; m++) {
+        if (selectTag.value == shortsButtonAndImage[m].name) {
+            document.getElementById("image1").src = Object.values(shortsButtonAndImage[m])[2];
+        }
+    }
+});
+
+selectTag2.addEventListener("change", function(){
+    for (let m = 0; m < shortsButtonAndImage.length; m++) {
+        if (selectTag2.value == shortsButtonAndImage[m].name) {
+            document.getElementById("image2").src = Object.values(shortsButtonAndImage[m])[2];
+        }
+    }
+});
+
+</script>
+
+</body>
+</html>
+
+<script>
+!function(){"use strict"}();</script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <script src="https://www.sweatybetty.com/on/demandware.static/Sites-SB-Site/-/default/js/allinoneJQuery.js" type="text/javascript"></script>
+
+<script src="//localhost:35729/livereload.js"></script>
+</body>
+
+</html>
