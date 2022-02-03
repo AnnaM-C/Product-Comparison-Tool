@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+
+<script>
+
+
+
+function createButton1() {
+
+    var button1 = document.getElementById("button1");
+    var dropDownContent = document.createElement("div");
+    var powerBtn = document.createElement("button");
+    var textButtonPower = document.createTextNode("Power");
+    var zeroBtn = document.createElement("button");
+    var textButtonZero = document.createTextNode("Zero");
+
+    dropDownContent.setAttribute("id", "dropDownContentId");
+    zeroBtn.appendChild(textButtonZero);
+    powerBtn.appendChild(textButtonPower);
+    dropDownContent.appendChild(powerBtn);
+    dropDownContent.appendChild(zeroBtn);
+    button1.appendChild(dropDownContent);
+}
+
+function createButton2() {
+
+var button1 = document.getElementById("button2");
+var dropDownContent = document.createElement("DIV");
+var powerBtn = document.createElement("BUTTON");
+var textbutton = document.createTextNode("Power");
+
+dropDownContent.setAttribute("id", "dropDownContentId");
+powerBtn.appendChild(textbutton);
+dropDownContent.appendChild(powerBtn);
+button1.appendChild(dropDownContent);
+
+}
+
+</script>
+
+    <div class="container" id="container">
+        <div class="col-s-6 col-6" id="line1">
+            <img src="pink.png">
+        </div>
+        <div class="col-s-6 col-6" id="line2">
+            <img src="pink.png">
+        </div>
+        <div class="col-s-6 col-6" id="product1">
+            <button id="button1" onmouseover="createButton1()" style="border: 5px solid lightpink; background-color: lightpink;">Choose Product</button>
+        </div>
+        <div class="col-6 col-s-6" id="product2">
+            <button id="button2" onmouseover="createButton2()" style="border: 5px solid lightpink; background-color: lightpink;">Choose Product</button>
+        </div>
+    </div>
+
+</body>
+</html>
